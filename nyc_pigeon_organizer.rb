@@ -10,9 +10,8 @@ def nyc_pigeon_organizer(data) #data is the entire hash of hash of array
   end
   if !new_hash[name][key] # if new_hash[name][key] DOES NOT exist *truthy value inverted again
     new_hash[name][key] = [] #new hash[name][key] will be an array. 
-    binding.pry
   end
-  new_hash[name][key] << new_key.to_s
+  new_hash[name][key] << new_key.to_s #takes my new_hash and adds the colors that were keys as a string. name is now a key, key is the array and new key is added to the array as a string. 
   end
   end
   end
