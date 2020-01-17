@@ -1,7 +1,7 @@
 require 'pry'
-def nyc_pigeon_organizer(data)
+def nyc_pigeon_organizer(data) #data is the entire hash of hash of array
   new_hash = {}
-  data.each do |key, value| 
+  data.each do |key, value| #
   value.each do |new_key, names|
   names.each do |name|
     
