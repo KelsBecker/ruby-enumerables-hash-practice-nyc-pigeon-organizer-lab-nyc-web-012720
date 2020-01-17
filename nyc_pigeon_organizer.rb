@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data) #data is the entire hash of hash of array
   value.each do |new_key, names| #new key is each color key, names is the array of pigeons names
   names.each do |name| #name is each pigeons name *because names is an array of pigeons I can only use 1 variable instead of 2 when its a hash
     
-  if !new_hash[name]
-    new_hash[name] = {}
+  if !new_hash[name] #if new_hash[name] DOES NOT exist, ! inverts the truthy value to falsey
+    new_hash[name] = {} #then the new_hash[name] will equal a hash, this turns the 
   end
   if !new_hash[name][key]
     new_hash[name][key] = []
